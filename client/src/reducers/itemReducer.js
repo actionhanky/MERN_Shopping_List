@@ -15,6 +15,7 @@ const initialState = {
  * as I need. See the change. previous is commented out above.
  */
 // export default function(state = initialState, action) {
+
 export const reducer = (state = initialState, action) => {
 	switch (action.type) {
 		case GET_ITEMS:
@@ -24,4 +25,5 @@ export const reducer = (state = initialState, action) => {
 		default:
 			return state;
 	}
+
 };
